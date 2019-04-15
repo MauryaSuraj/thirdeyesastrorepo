@@ -162,7 +162,7 @@
         echo "<td>$row->puja_img_1</td>";
         echo "<td>$row->puja_img_2</td>";
         echo "<td>$row->puja_img_3</td>";
-        echo "<td><a href='index.php?source=view&view_page=astro&view_yantra_id=$row->puja_id' class='btn btn-primary'>View</td>";
+        echo "<td><a href='index.php?source=view&view_page=puja&view_yantra_id=$row->puja_id' class='btn btn-primary'>View</td>";
         echo "</tr>";
     }
   }
@@ -196,7 +196,7 @@
         echo "<td>$row->katha_img_1</td>";
         echo "<td>$row->katha_img_2</td>";
         echo "<td>$row->katha_img_3</td>";
-        echo "<td><a href='index.php?source=view&view_page=astro&view_yantra_id=$row->katha_id' class='btn btn-primary'>View</td>";
+        echo "<td><a href='index.php?source=view&view_page=katha&view_yantra_id=$row->katha_id' class='btn btn-primary'>View</td>";
         echo "</tr>";
     }
   }
@@ -230,7 +230,7 @@
         echo "<td>$row->kundali_img_1</td>";
         echo "<td>$row->kundali_img_2</td>";
         echo "<td>$row->kundali_img_3</td>";
-        echo "<td><a href='index.php?source=view&view_page=astro&view_yantra_id=$row->kundali_id' class='btn btn-primary'>View</td>";
+        echo "<td><a href='index.php?source=view&view_page=kundali&view_yantra_id=$row->kundali_id' class='btn btn-primary'>View</td>";
         echo "</tr>";
     }
   }
@@ -354,19 +354,9 @@
     global $pdo;
     $stmt = $pdo->query('SELECT * FROM tbl_booking');
     while ($row = $stmt->fetch(PDO::FETCH_OBJ)) {
-      // echo $row->booking_id;
-      // echo $row->booking_status;
-      // echo $row->client_name;
-      // echo $row->client_number;
-      // echo $row->client_email;
-      // echo $row->client_address;
-      // echo $row->client_booking_date;
-      // echo $row->client_booking_time;
-      // echo $row->booking_price;
-      // echo $row->samagri_added;
-      // echo $row->samagri_id;
-      // echo $row->product_id;
-      // echo $row->product_category;
+      // echo $row->booking_id;// echo $row->booking_status;// echo $row->client_name;// echo $row->client_number;// echo $row->client_email;
+      // echo $row->samagri_id;/ echo $row->product_id;// echo $row->product_category;// echo $row->samagri_added;// echo $row->booking_price;
+      // echo $row->client_address;// echo $row->client_booking_time;// echo $row->client_booking_date;
       echo "<tr><th scope='row'> $row->booking_id </th>";
       echo "<td>$row->booking_status</td>";
       echo "<td>$row->client_name</td>";
@@ -375,8 +365,100 @@
       echo "<td>$row->samagri_added</td>";
       echo "<td>$row->product_id</td>";
       echo "<td>$row->client_address</td>";
-      echo "<td><a href='#' class='btn'>View</a></td></tr>";
+      echo "<td><a href='index.php?source=view&view_page=booking&view_yantra_id=$row->booking_id' class='btn btn-primary'>View</a></td></tr>";
     }
+  }
+  function puja_view($id){
+    global $pdo;
+    $sql = "SELECT * FROM tbl_puja WHERE puja_id = :id ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id'=>$id]);
+    $yantras = $stmt->fetch();
+    echo "<h1>".$yantras->puja_name."</h1>";
+    echo "<hr>";
+    echo "<h2> Puja Anusthan Details </h2>";
+    echo "<p class='text-justify'>".$yantras->puja_details."</p>";
+    echo "<h2> Puja Anusthan Meta Keyword </h2>";
+    echo "<p>".$yantras->puja_meta_keyword."</p>";
+    echo "<h2> Puja Anusthan Meta Description </h2>";
+    echo "<p>".$yantras->puja_meta_des."</p>";
+    echo "<h2> Puja Anusthan Price  </h2>";
+    echo "<p> Rs. <strong>".$yantras->puja_price."</strong></p>";
+    echo "<h2> Yantra Picture </h2>";
+    echo "<p>".$yantras->puja_img_1."</p>";
+    echo "<p>".$yantras->puja_img_2."</p>";
+    echo "<p>".$yantras->puja_img_3."</p>";
+  }
+  function katha_view($id){
+    global $pdo;
+    $sql = "SELECT * FROM tbl_katha WHERE katha_id = :id ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id'=>$id]);
+    $yantras = $stmt->fetch();
+    echo "<h1>".$yantras->katha_name."</h1>";
+    echo "<hr>";
+    echo "<h2> Katha Details </h2>";
+    echo "<p class='text-justify'>".$yantras->katha_details."</p>";
+    echo "<h2> Katha Meta Keyword </h2>";
+    echo "<p>".$yantras->katha_keyword."</p>";
+    echo "<h2> Katha Meta Description </h2>";
+    echo "<p>".$yantras->katha_desc."</p>";
+    echo "<h2> Katha Price  </h2>";
+    echo "<p> Rs. <strong>".$yantras->katha_price."</strong></p>";
+    echo "<h2> Yantra Picture </h2>";
+    echo "<p>".$yantras->katha_img_1."</p>";
+    echo "<p>".$yantras->katha_img_2."</p>";
+    echo "<p>".$yantras->katha_img_3."</p>";
+  }
+  function kundali_view($id){
+    global $pdo;
+    $sql = "SELECT * FROM tbl_kundali WHERE kundali_id = :id ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id'=>$id]);
+    $yantras = $stmt->fetch();
+    echo "<h1>".$yantras->kundali_name."</h1>";
+    echo "<hr>";
+    echo "<h2> Kundali Details </h2>";
+    echo "<p class='text-justify'>".$yantras->kundali_details."</p>";
+    echo "<h2> Kundali Meta Keyword </h2>";
+    echo "<p>".$yantras->kundali_meta_keyword."</p>";
+    echo "<h2> Kundali Meta Description </h2>";
+    echo "<p>".$yantras->kundali_meta_desc."</p>";
+    echo "<h2> Kundali Price  </h2>";
+    echo "<p> Rs. <strong>".$yantras->kundali_price."</strong></p>";
+    echo "<h2> Yantra Picture </h2>";
+    echo "<p>".$yantras->kundali_img_1."</p>";
+    echo "<p>".$yantras->kundali_img_2."</p>";
+    echo "<p>".$yantras->kundali_img_3."</p>";
+  }
+  function booking_view($id){
+    global $pdo;
+    $sql = "SELECT * FROM tbl_booking WHERE booking_id = :id ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id'=>$id]);
+    $yantras = $stmt->fetch();
+    echo "<div class='container'><div class='row'><div class='col-md-6'>";
+    echo "<p> Booking Id : $yantras->booking_id </p></div><div class='col-md-6'><p>";
+    echo "Booking Status : $yantras->booking_status";
+    echo "</p></div></div><div class='row'><div class='col-md-4'>";
+    echo "<h3> Client Information  </h3>";
+    echo "<br>";
+    echo "<p> Client Name : $yantras->client_name </p>";
+    echo "<p> contact Number : $yantras->client_number </p>";
+    echo "<p> Email : $yantras->client_email </p>";
+    echo "<p> Address : $yantras->client_address </p>";
+    echo "</div><div class='col-md-4'>";
+    echo "<h3> Booking Information </h3>";
+    echo "<br>";
+    echo "<p> Booked Product : $yantras->product_id </p>";
+    echo "<p> Booking Date : $yantras->client_booking_date </p>";
+    echo "<p> Booking Time : $yantras->client_booking_time </p>";
+    echo "</div><div class='col-md-4'>";
+    echo "<h3> Additional Information </h3>";
+    echo "<br>";
+    echo "<p> Samagri Added : $yantras->samagri_id </p>";
+    echo "<p> Samagri Name : $yantras->product_id </p>";
+    echo "</div></div></div>";
   }
 
 
