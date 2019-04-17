@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>astrology</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+  <?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -34,18 +31,18 @@
         <div class="row">
           <div class="col-md-12">
             <p class="text-center">
-                    
-                    
+
+
 </p>        <h2>1. Acceptance of conditions of the agreement</h2>
             <p class="text-center">
                  ThirdEyesAstro.com provides astrological consultations to customers based on their birth data against the conditions of this agreement, and by clicking on the I accept from signifies, your acceptance of all the conditions of this agreement.
                   </p>
-                  
+
                   <h2> 2. Details of forecasts</h2>
             <p class="text-center">
                       These consultations are based purely on astrological principles. Since astrology is subject to individual interpretations ThirdEyesAstro.com does not make any warranties on the accuracy or interpretations, which anyone may make of these consultation reports. These consultations, therefore, have no legal or contractual significance.
                       </p>
-                      
+
                       <h2>3. Secrecy of subscriber information</h2>
             <p class="text-center">
                  ThirdEyesAstro.com undertakes to handle the customer profile and the entire data of name, date time and place of birth, address, e-mail, telephone number etc. in complete secrecy and no disclosures will be made to anyone except where it is required to be disclosed by existing or future laws. The birth data will be used solely for the purpose of communicating the consultation reports to the customers only.

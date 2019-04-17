@@ -4,11 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+  <?php include 'include/style_link.php'; ?>
 
 <title>Kundali faladesh  expert pandit ji in delhi,bihar India</title>
 <meta name="Title" content="Kundali faladesh  expert pandit ji"/>
@@ -38,7 +34,7 @@
       <div class="col-md-12 text-center">
         <h1 class="h1 text-center my-auto">Faladesh</h1>
         <p class="text-center">
-          
+
 Result or owner of something Say faladesh result In astrology, things that are described as the effects faladesh(फलाआदेश hindi word) results of planets.
         </p>
       </div>
@@ -84,15 +80,15 @@ For example, if the marriage is 13 degrees and at the destination the teacher is
             <p class="text-center">
             </p>
             <p class="text-center">
-              
+
             </p>
             <p class="text-center">
             </p>
             <p class="text-center">
-             
+
             </p>
             <p class="text-justify">
-             
+
             </p>
             <p class="text-center">
             </p>

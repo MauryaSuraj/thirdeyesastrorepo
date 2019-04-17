@@ -1,10 +1,11 @@
 <footer>
     <div class="container-fluid">
+      <hr>
         <div class="row">
             <div class="col-md">
-                <h5 class="text-white text-uppercase"> Pages Link </h5><hr>
+                <h5 class="text-white text-uppercase"> Pages Link </h5>
                 <a class="nav-link" href="puja.php#Planetary_peace_worship">Planetary peace worship ( ग्रह शान्ति पूजन ) </a>
-                     <a class="nav-link" href="puja.php#Rudrabhishek"> Rudrabhishek (  रुद्राभिषेक ) </a>
+                    <a class="nav-link" href="puja.php#Rudrabhishek"> Rudrabhishek (  रुद्राभिषेक ) </a>
                     <a class="nav-link" href="puja.php#Mammoth_chanting"> Mammoth chanting ( महामृत्युंजय जप ) </a>
                     <a  class="nav-link" href="puja.php#Ramchaar_worship">Ramchaar worship ( रामार्चा पूजन ) </a>
                     <a class="nav-link" href="puja.php#Great_science_experiment">Great science experiment ( महाविद्या  प्रयोग ) </a>
@@ -21,7 +22,7 @@
               <a class="nav-link" href="puja.php#grih_pravesh"> गृह प्रवेश पूजा और वास्तु शांति </a>
             </div>
             <div class="col-md-4">
-                <h4 class="h4 text-white text-uppercase">Trusted And Secure</h4><hr>
+                <h4 class="h4 text-white text-uppercase">Trusted And Secure</h4>
                 <small class="text-gray">128-Bit SSL, Encrypted Connection, 100% Safe and Secure</small>
                 <img src="img/bank.png" style="height: 200px; width: 250px;" />
             </div>
@@ -30,9 +31,9 @@
 
   </footer>
 
-    <div class="container-fluid   bg-warning">
+    <div class="container-fluid">
       <div class="row pt-2 ">
-        <div class="col-md-10 m-auto p-auto">
+        <div class="col-md-12 m-auto p-auto">
           <div class="row">
             <a href="index.php" class="nav-link col-md text-center">Home</a>
             <a href="about.php" class="nav-link col-md text-center">About Us</a>
@@ -146,9 +147,18 @@ $(window).resize(function(){
   </div>
 </div>
 
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script type="text/javascript" src="include/menu.js">
+  </script>
+  <script src="js/type.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>astrology</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+  <?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -21,7 +18,7 @@
         <h1 class="h1 text-center">Contact on +91 - 8510849225</h1>
         <p class="text-center">
           We Provide Various service related To vastu shastra, Janam Kundali, Hastrekha Faladesh by fingerprint, yagadi at very reasonable price, for any query or booking contact us at that mobile number.
-       
+
         </p>
         <a href="content.html" class="btn btn-primary">VIEW OUR SERVICES</a>
       </div>
@@ -56,10 +53,10 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         <p>
-            <address><strong>Address: 
+            <address><strong>Address:
                 283, third floor  <br>Satya Niketan Delhi 110021
           <br>eyeasthird@gmail.com </address> </strong>
-        
+
         </p>
       </div>
     </div>

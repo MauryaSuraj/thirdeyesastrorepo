@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
+
   <title> Gemstones : Buy Gemstone| Semi Precious Stones | Graha Ratna Stone | Thirdeyesastro.com</title>
   <meta name="Title" content="Gemstones : Buy Gemstone| Semi Precious Stones | Graha Ratna Stone | Thirdeyesastro.com"/>
     <meta name="keywords" content="natural stones, precious stones, graha ratna stone, semiprecious stones, semi precious stones, gemstones, gem stones rings, online gemstones, benefits of gemstone, black opal, white opal, Buy Gemstones" />
@@ -19,12 +19,7 @@
 
   gtag('config', 'UA-136820932-1');
 </script>
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+<?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -36,7 +31,7 @@
         <h2 class="h2 text-center ">Gem Stones</h2>
         <p class="text-center exe">Buy pure gemstones through directly by a personal astrologer who has experience in gemstone vedic astrology. Natural stones, Precious stones, Graha ratna stone, Semi-precious stones, Gemstones, and Gemstones rings all available.
 Before buying Gemstone consult our world famous expert astrologer (pandit). You can wear gems by your birth date time place where you were born to remove any trouble from life and get more health and wealth and success in every aspect of your life.
-  
+
 
 </p>
         <div class="row">
@@ -46,7 +41,7 @@ Before buying Gemstone consult our world famous expert astrologer (pandit). You 
 
             </p>
             <p class="text-center">
-             
+
             </p>
           </div>
         </div>
@@ -71,7 +66,7 @@ Before buying Gemstone consult our world famous expert astrologer (pandit). You 
           <img src="img/yellow-sapphire_1.png" alt="" class="img-fluid">
           <h5 class="h5 text-center">Pukhraj/Yellow Sapphire</h5>
           <p class="text-justify">
-           
+
 This gem enhances the power of thinking and thinking. Its wear leads to bad thoughts. The power to fight against injustice increases.
 
 By wearing coral with this gem will remove the lack of courage with new energy. Those people who are in administrative services can also hold.
@@ -120,7 +115,7 @@ Taurus, Gemini, Virgo, Bula, Capricorn, Aquarius and Married people should avoid
 
 Persons related to justice, religion and academic field should wear topaz gems. Even people working in the administration services get auspicious results by wearing this gem. </p>
         </div>
-        
+
         <div class="col-md-3 p-2">
           <img src="img/white-opal-plain.png" alt="" class="img-fluid">
           <h5 class="h5 text-center">white opal plain</h5>

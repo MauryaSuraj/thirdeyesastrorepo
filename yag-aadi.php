@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Yagya havan (yag addi) services by pandit ji in bihar,delhi india</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+<?php include 'include/style_link.php'; ?>
 
 <meta name="Title" content="Yagya havan (yag addi) services by pandit ji in bihar,delhi india"/>
     <meta name="keywords" content="Yagya And Havan, Yagya And Havan benefits, Yagya And Havan difference, Yagya And Havan methods, Yagya And Havan vidhi, Yagya And Havan puja, Yagya And Havan in hindu dharm,  spiritual yagyas, planetary yagya, vedic astrology- delhi ncr,bihar,patna,muzaffarpur" />
@@ -35,7 +32,7 @@
       <div class="col-md-12 text-center">
         <h1 class="h1 text-center my-auto">Yag Aadi</h1>
         <p class="text-center">
-          
+
 वास्तोष्पते प्रति जानीह्यस्मान् त्स्वावेशो अनमीवोरू भवान्। यत् त्वेमहे प्रति तन्नो जुषस्व शं नो भव द्विपदे शं चतुष्पदे।।
 
         </p>
@@ -48,11 +45,11 @@
       <div class="container my-5">
           <div class="col-md-12">
             <p class="text-center">
-             
+
 <h1></h1>
 
 Vaastu means a place where God and man live together. Our body is made up of five main substances and Vaastu is regarded as one of these five elements. Many times it happens that our house does not fit our body, then this effect affects us and this is said to be Vastu fault.
-Brahma, Vishnu, Mahesh worship the Vaastu along with the worship of all other deities. Vastu Puja can be eliminated all the obstacles that are spread in the environment otherwise there may be obstruction in life. Vastu prevails, losses and misfortune too. 
+Brahma, Vishnu, Mahesh worship the Vaastu along with the worship of all other deities. Vastu Puja can be eliminated all the obstacles that are spread in the environment otherwise there may be obstruction in life. Vastu prevails, losses and misfortune too.
 Vastu dev is the act of worship on various occasions such as rituals, land worship, foundations, mining, well-mining, foundation stones, doorsteps and house entry. By breaking any part of the house and making it again, the Vastu dissolved faults.
 Vaastu dev worship is done for its peace. In spite of this, if you feel that due to any disorder, loss of wealth or diseases in your home due to any Vastu defect, then you should take Vaastu Pooja. Any auspicious day or Ravi Pushya Yoga should perform Vaastu worship.
 Puja content consists of coins, betel nut, various flavored flavors, coconut, pacharangi nara, kumkum, rice, scapula shell, mango lamb, mango leaves, barley, black sesame, real ghee, five utensils Panchmeva, five types of sweets, Five types of fruits, five types of flowers,

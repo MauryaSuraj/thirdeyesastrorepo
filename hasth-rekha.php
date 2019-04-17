@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Hasth Rekha services in delhi bihar by hasth Rekha expert pandit ji</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
-  
-  
+<?php include 'include/style_link.php'; ?>
+
+
   <title>Hasth Rekha services in delhi bihar by hasth Rekha expert pandit ji</title>
 <meta name="Title" content="Hasth Rekha services in delhi bihar by hasth Rekha expert pandit ji"/>
     <meta name="keywords" content="Hasth Rekha Gyan in Hindi, Palmistry in Hindi, हस्तरेखा ज्योतिष, Hasth Rekha- delhi ncr,bihar,patna,muzaffarpur" />
@@ -61,10 +58,10 @@
             <p class="text-center">
             </p>
             <p class="text-center">
-              
+
             </p>
             <p class="text-center">
-              
+
             </p>
             <p class="text-center">
                   </p>
@@ -73,10 +70,10 @@
             <p class="text-center">
                   </p>
             <p class="text-justify">
-              
+
             </p>
             <p class="text-center">
-              
+
             </p>
           </div>
         </div>

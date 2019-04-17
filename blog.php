@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>astrology</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+  <?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -22,7 +19,7 @@
         <p class="text-center">
           We Provide Various service related To vastu shastra, Janam Kundali, Hastrekha Faladesh by fingerprint, yagadi at very reasonable price, for any query or booking contact us at that mobile number.
         </p>
-        
+
       </div>
     </div>
   </div>

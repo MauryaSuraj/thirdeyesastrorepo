@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>astrology</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+<?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -34,12 +31,12 @@
         <div class="row">
           <div class="col-md-12">
             <p class="text-center">
-                    
-                    
+
+
 
 </p>
             <p class="text-center">
-                 
+
                  As we all know that when things come to personal issues, it becomes essential that we are extra cautious. Considering this aspect, we take appropriate safety and security steps for personal data and the financial information handling. All the information which we get from our customer is kept secured. The transactions at ThirdEyesAstro.com are processed in a proper manner that is elaborated as follows:
  <ul>All the details are filled by the visitors to place the order after selecting the appropriate one.</li>
  <li>After this, click on the option Place order and the page will redirect to “Billing Details” page.</li>

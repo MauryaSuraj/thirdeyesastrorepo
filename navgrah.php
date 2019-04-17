@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
-  
+
+  <?php include 'include/style_link.php'; ?>
+
 <title>Book for puja katha havan pandit ji on one call in bihar and delhi</title>
 <meta name="Title" content="Book for puja katha havan pandit ji on one call in bihar and delhi"/>
     <meta name="keywords" content="Surya Puja,Chandra Puja,Mangal Puja,Budh Puja,Guru Puja,Shukra Puja,Shani Puja,Shani Puja,Rahu Puja,Ketu Puja-delhi ncr,bihar,patna,muzaffarpur" />
@@ -57,7 +54,7 @@
            <div class="col-md-12" id="chandrapuja">
             <h1>Chandra Puja</h1>
             <p class="text-justify">
-              
+
                  The suggestion of Vedic Jyotish Chandra Puja is mainly to reduce the inauspiciousness of the moon functioning in a horoscope, to avoid any defects created in the horoscope by the inauspicious moon or functioning well in any horoscope. Gives the strength and power of Chandra to increase the fruits. The commencement of Chandra Puja is usually done on Monday, and on the next Monday, the worship is concluded.
                </p>
            <p class="text-justify">
@@ -116,7 +113,7 @@
             <h1>Ketu Puja</h1>
             <p class="text-justify">
              The role of Rahu and Ketu is like a police officer who works on the order of Saturn.Saturn is blue in color, Rahu is black and Ketu is white. Lord of Shani is Bhairavji, Lord Ganesha of Lord Rasu and Saraswatiji of Ketu. The followers of Saturn are Rahu and Ketu. Their place in the body is appointed. The head is Rahu, then the Ketu torso. If any kind of dirt or saliva is accumulated up to your head including your neck, then the outbreak of Rahu is crossing you and if there is any disorder in the lungs, stomach and leg, then you are a victim of Ketu.
-         
+
               </p>
            <p class="text-justify">
                    Any type of sukh shanti grah puja, graha shanty hire pandit ji(astrologer) from  ThirdEyesAstro.

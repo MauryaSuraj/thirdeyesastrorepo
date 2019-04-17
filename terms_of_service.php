@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>astrology</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+<?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -41,7 +38,7 @@
         </p>
         <p>You agree to inform Thirdeyesastro.com your subsequent disability to enter into any contract.</p>
         <p>Subsequent disability shall entitle Thirdeyesastro.com to restrict/change/terminate this agreement at its own discretion.</p>
-        
+
         <h2>Term & Termination</h2>
         <p>
             This Agreement will remain in full force and effect while you use the Site and/or are a Member of Thirdeyesastro.com. You may terminate your membership at any time, for any reason by informing Thirdeyesastro.com in writing to terminate your Membership. In the event you terminate your membership, you will not be entitled to a refund of any unutilized subscription fees or access to digital content or reports purchased through Thirdeyesastro.com. Thirdeyesastro.com may terminate your access to the Site and/or your membership for any reason which shall be effective upon sending notice of termination to you at the email address you provide in your application for membership or such other email address as you may later provide to Thirdeyesastro.com. If Thirdeyesastro.com terminates your membership because of your breaching the Agreement, you will not be entitled to any refund of any unused Subscription fees or access to digital content or reports purchased by you. Even after this Agreement is terminated, certain provisions will remain in effect including sections 5-12, inclusive, of this Agreement.
@@ -165,35 +162,35 @@ Should you need any clarification in respect of this website, you may contact us
             Any damage caused to the product while in transit, will be dealt with by Thirdeyesastro.com and its agencies. While Thirdeyesastro.com tries to make sure that the products displayed on the website are delivered to the customer in an as-is condition, the picture may differ slightly from the original product. The customers are advised to exercise discretion in this matter. No refunds will be issued on this bias.
         </p>
         <p>
-           Phone Advise: Please ensure that your contact number is in full coverage area and that you answer the phone when it rings. Any call once connected, will not be refunded. 
+           Phone Advise: Please ensure that your contact number is in full coverage area and that you answer the phone when it rings. Any call once connected, will not be refunded.
         </p>
         <h2>Refund Policy</h2>
         <p>
             All refunds will be made after deducting the transaction charges levied by the bank and / or the payment gateway, the cost of shipping or courier charges (back and forth), customs duty and / or any other charges that may have been borne by Thirdeyesastro.com in processing and / or delivering the service, as applicable. Multiple payments against the same order will be refunded in full (without deducting transaction charges on the duplicate payments), after retaining the cost of a singular order.
         </p>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>

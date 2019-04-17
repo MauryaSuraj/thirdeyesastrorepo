@@ -4,11 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+
+<?php include 'include/style_link.php'; ?>
 
 <title>Best Astrology service provider in -Bihar,Delhi India</title>
 <meta name="Title" content="Best Astrology service provider in -Bihar,Delhi India"/>
@@ -60,13 +57,13 @@
           <div class="col-md-12" id="Marriage_Prediction">
             <h1>Marriage Prediction</h1>
             <p class="text-justify">
-              
-Indian Hindu astrology is way of life in Hindu religion which include many small and big important things going to happen in your life.  In the life's decisions you choose things wisely. Marriage expectation is additionally one of the biggest decision in life.Everybody want to know how they going to live together  after marriage peaceful and prosperous life. We are the best astrology service provider with our expert astrologers (pandit). 
+
+Indian Hindu astrology is way of life in Hindu religion which include many small and big important things going to happen in your life.  In the life's decisions you choose things wisely. Marriage expectation is additionally one of the biggest decision in life.Everybody want to know how they going to live together  after marriage peaceful and prosperous life. We are the best astrology service provider with our expert astrologers (pandit).
                   </p>
             <p class="text-justify">
                  </p>
           </div>
-          
+
           <div class="col-md-12" id="Health_Horoscope">
             <h1>Health Horoscope</h1>
             <p class="text-justify">
@@ -75,7 +72,7 @@ Indian Hindu astrology is way of life in Hindu religion which include many small
             <p class="text-justify">
                 </p>
           </div>
-          
+
           <div class="col-md-12" id="Child_Birth_Issue">
             <h1>Child Birth Issue</h1>
             <p class="text-center">

@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Best Vastu shanti consultant pandit ji(astrologer)</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+<?php include 'include/style_link.php'; ?>
 
 
 <title>Best Vastu shanti consultant pandit ji(astrologer)</title>
@@ -38,7 +35,7 @@
       <div class="col-md-12 text-center">
         <h1 class="h1 text-center my-auto">Vastu Shanti</h1>
         <p class="text-center">
-          
+
         </p>
       </div>
     </div>
@@ -61,7 +58,7 @@ These processes are part of worship in the composition of Vastupujjan- Swastivav
 Husband and wife should fast on the day of Vastupujujan. Fasting should be done according to its power. Fasting does not break from eating fruits, milk and dry fruits. Food can be done after the completion of the Vastu Poojan process.
 That is Vaastu devta! We worship your true heart. If you listen to our prayers, you should free us from disease and poverty. Fulfill our desire for riches. Make auspicious time for all the families, animals and vehicles in the Vastu area or home.    </p>
             <p class="text-center">
-              
+
             </p>
             <p class="text-center">
                   </p>
@@ -76,7 +73,7 @@ That is Vaastu devta! We worship your true heart. If you listen to our prayers, 
             <p class="text-justify">
                   </p>
             <p class="text-center">
-              
+
             </p>
           </div>
         </div>

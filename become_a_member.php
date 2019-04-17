@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>astrology</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png">
+  <?php include 'include/style_link.php'; ?>
 </head>
 <body>
   <header>
@@ -19,7 +16,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h1 class="h1 text-center">Contact on +91-8510849225</h1>
-        
+
       </div>
     </div>
   </div>
