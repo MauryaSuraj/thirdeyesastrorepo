@@ -54,7 +54,7 @@
              The ThirdEyeAstro is a one stop solution for all problems pertaining to astrology and Vastu Dosh as it provides due services and adequate advice with a team of experts at doorsteps. It, however, lays stress mainly on key services including Vastu Shanti, Faladesh, Hasth Rekha, Kundali, Gem stone, Puja and Anusthan.  </p>
           <p class="text-justify">
               As far Puja is concerned, its specific experts perform ‘Puja and Anusthan’ other experts share their expertise over Vashtu Shanti. Experts having in-depth knowledge over Kundali extend their advices on marriage prediction and pairing of Kundalies and Shaadi-Vivah.
-  </p>
+            </p>
           <p class="text-justify">
               The ThirdEyeAstro also offers various names for newly borne babies with its Pandits as the names in conformity with Kundali get them success in their lives. It also suggests ‘Puja and Anusthan’, if required, for the peaceful and successful lives of these babies.
           </p>
@@ -67,75 +67,30 @@
       </div>
     </div>
     </div>
-    <div class="container"style=" margin-bottom:2rem;">
-      <!-- <h3 class="display-4">Horoscope</h3> -->
-      <div class="row">
-        <div class="col-md-2">
-          <img src="img/horo/1.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/2.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <<img src="img/horo/3.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/4.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/5.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/6.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/7.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/8.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/9.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/10.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/11.png" alt="capricorn sign" class="img-horo">
-        </div>
-        <div class="col-md-2">
-          <img src="img/horo/12.png" alt="capricorn sign" class="img-horo">
-        </div>
-      </div>
-      <!-- <h3 class="display-4">Puja And Anusthan</h3> -->
-      <div class="row text-center">
-        <div class="col-md-3">
-          <img src="img/durag.jpg" alt="hindu goddess durga" class="img-fluid img1" >
+    <div class="container-fluid "style=" margin-bottom:2rem;">
+
+      <div class="row text-center my-3">
+        <div class="col-md z-depth-2 mx-4 p-2">
+          <img src="img/durag.jpg" alt="hindu goddess durga" class=" img1" >
           <p>Durga Puja</p>
           <br>
           <a href="#" class="btn btn-outline-primary"> Book Pooja </a>
         </div>
-        <div class="col-md-3">
-          <img src="img/ganesha.jpg" alt="hindu god ganesha" class="img-fluid img1" >
+        <div class="col-md z-depth-2 mx-4 p-2">
+          <img src="img/ganesha.jpg" alt="hindu god ganesha" class=" img1" >
           <p>Ganesh Puja</p>
           <br>
           <a href="#" class="btn btn-outline-primary"> Book Pooja </a>
         </div>
-        <div class="col-md-3">
-          <img src="img/hanuman.jpg" alt="hindu god hanuman" class="img-fluid img1" >
+        <div class="col-md z-depth-2 mx-4 p-2">
+          <img src="img/hanuman.jpg" alt="hindu god hanuman" class=" img1" >
           <p>Hamunat Katha</p>
-          <br>
-          <a href="#" class="btn btn-outline-primary"> Book Pooja </a>
-        </div>
-        <div class="col-md-3">
-          <img src="img/ram.png" alt="hindu god ram" class="img-fluid img1" >
-          <p>Ramayan Path</p>
           <br>
           <a href="#" class="btn btn-outline-primary"> Book Pooja </a>
         </div>
       </div>
 
-      <h3 class="display-4">Blogs</h3>
+      <!-- <h3 class="display-4">Blogs</h3>
       <div class="row">
         <div class="col-md-3">
           <img src="img/chandra.png" alt="moon" class="img-fluid img1" >
@@ -153,7 +108,7 @@
           <img src="img/marriage.png" alt="hands and ring" class="img-fluid img1" >
           <p class="h6" style="margin-top:10px;"><a>How many personality traits should match for a successful marriage?</a></p>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="bg-1567"></div>
  </main>

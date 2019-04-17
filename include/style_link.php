@@ -1,3 +1,4 @@
+<?php include_once 'functions.php'; ?>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <!-- Bootstrap core CSS -->

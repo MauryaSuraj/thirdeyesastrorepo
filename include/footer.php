@@ -1,4 +1,4 @@
-<footer>
+<footer class="bg-dark">
     <div class="container-fluid">
       <hr>
         <div class="row">
@@ -31,7 +31,7 @@
 
   </footer>
 
-    <div class="container-fluid">
+    <div class="container-fluid footer">
       <div class="row pt-2 ">
         <div class="col-md-12 m-auto p-auto">
           <div class="row">

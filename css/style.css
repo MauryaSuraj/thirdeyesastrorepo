@@ -2,6 +2,9 @@ main p{
   font-size: 18px;
   font-weight: normal;
 }
+main a{
+  color: black !important;
+}
 main{
   margin-top: 140px;
 }
@@ -10,7 +13,6 @@ main{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 72px;
-
 }
 .bg-custom{
   background: #ee0979;
@@ -20,6 +22,17 @@ main{
 .logo-footer img{
   height: 25px;
   width: 25px;
+}
+.img1{
+height: 200px;
+width: 200px;
+}
+.footer a{
+  color: black!important;
+  font-weight: 400;
+}
+a{
+  color: white !important;
 }
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {

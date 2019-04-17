@@ -28,7 +28,7 @@
     <div class="col-md-12 m-auto p-auto">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
+          <a class="nav-link" href="index.php">HOME</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +41,7 @@
                   <span class="text-uppercase text-white">Category 2</span>
                   <ul class="nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="yantra.php">yantra</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link item</a>
@@ -68,10 +68,8 @@
                 <!-- /.col-md-4  -->
                 <div class="col-md-4">
                   <a href="">
-                    <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
+                    <img src="img/sri-yantra.png" alt="" class="img-fluid">
                   </a>
-                  <p class="text-white">Short image call to action</p>
-
                 </div>
                 <!-- /.col-md-4  -->
               </div>
@@ -82,10 +80,10 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT US</a>
+          <a class="nav-link" href="contact.php">CONTACT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">BLOG</a>
+          <a class="nav-link" href="blog.php">BLOG</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -125,9 +123,8 @@
                 <!-- /.col-md-4  -->
                 <div class="col-md-4">
                   <a href="">
-                    <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
+                    <img src="img/leo.png" alt="" class="img-fluid">
                   </a>
-                  <p class="text-white">Short image call to action</p>
                 </div>
                 <!-- /.col-md-4  -->
               </div>
@@ -136,7 +133,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">GEMSTONES</a>
+          <a class="nav-link" href="gemstone.php">GEMSTONES</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -176,10 +173,8 @@
                 <!-- /.col-md-4  -->
                 <div class="col-md-4">
                   <a href="">
-                    <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
+                    <img src="img/temple.png" alt="" class="img-fluid">
                   </a>
-                  <p class="text-white">Short image call to action</p>
-
                 </div>
                 <!-- /.col-md-4  -->
               </div>
@@ -227,10 +222,8 @@
                 <!-- /.col-md-4  -->
                 <div class="col-md-4">
                   <a href="">
-                    <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
+                    <img src="img/pandit.png" alt="" class="img-fluid">
                   </a>
-                  <p class="text-white">Short image call to action</p>
-
                 </div>
                 <!-- /.col-md-4  -->
               </div>
@@ -241,7 +234,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> FREE HOROSCOPE</a>
+          <a class="nav-link" href="horoscope.php"> FREE HOROSCOPE</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -282,10 +275,8 @@
                 <!-- /.col-md-4  -->
                 <div class="col-md-4">
                   <a href="">
-                    <img src="https://dummyimage.com/200x100/ccc/000&text=image+link" alt="" class="img-fluid">
+                    <img src="img/ganesha.png" alt="" class="img-fluid">
                   </a>
-                  <p class="text-white">Short image call to action</p>
-
                 </div>
                 <!-- /.col-md-4  -->
               </div>
