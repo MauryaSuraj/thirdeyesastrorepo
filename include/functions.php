@@ -66,8 +66,8 @@ function yantra_list(){
     echo "<h3>$row->yantra_name</h3>";
     echo "<p>" . substr($row->yantra_text, 0 , strpos($row->yantra_text, ' ', 50)) ."</p> <br>";
     echo "<strong> Rs. $row->yatra_price</strong><br>";
-    echo "<a href='index.php?source=view&view_page=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>BUY NOW </a>";
-    echo "<a href='index.php?source=view&view_page=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>VIEW </a>";
+    echo "<a href='buy.php?source=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>BUY NOW </a>";
+    echo "<a href='view.php?source=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>VIEW </a>";
     echo "</div>";
   }
 }
@@ -192,8 +192,10 @@ function astrology_view($id){
   }
   function user_login_info(){
     $user_id='';
+    if (isset($_SESSION['user_id'])) {
+          $user_id = $_SESSION['user_id'];
+    }
     $user_login_true = FALSE;
-    $user_id = $_SESSION['user_id'];
     global $pdo;
     if (!$user_id) {
     }else {
@@ -217,6 +219,50 @@ function astrology_view($id){
     }
     return $buyer;
   }
+  function yantra_view($id){
+    global $pdo;
+    $sql = "SELECT * FROM tbl_yantra WHERE yantra_id = :id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['id'=>$id]);
+    $row = $stmt->fetch();
+      echo "<div class='row z-depth-2 mx-4 p-2'>";
+      echo "<div class='col-md-6 '>";
+      echo "<img src='img/hanuman.jpg' alt='hindu god hanuman' class='img1' >";
+      echo "</div><div class='col-md'>";
+      echo "<h3 class='h2'>$row->yantra_name</h3>";
+      echo "<p> $row->yantra_text </p> <br>";
+      echo "<strong> Rs. $row->yatra_price</strong><br>";
+      echo "<a href='data.php?product_type=yantra&product_id=$row->yantra_id' class='btn btn-outline-success'>BUY NOW </a>";
+      if(!user_login_info())
+      {
+        echo "<a href='login.php'> Please Login To Buy </a>";
+      }
+      echo "</div></div></div>";
+    }
+    function yantra_view_data($id){
+      global $pdo;
+      $sql = "SELECT * FROM tbl_yantra WHERE yantra_id = :id";
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute(['id'=>$id]);
+      $row = $stmt->fetch();
+        echo "<div class='row z-depth-2 mx-4 p-2'>";
+        echo "<div class='col-md-6 '>";
+        echo "<img src='img/hanuman.jpg' alt='hindu god hanuman' class='img1' >";
+        echo "</div><div class='col-md'>";
+        echo "<h3 class='h2'>$row->yantra_name</h3>";
+        echo "<strong> Rs. $row->yatra_price</strong><br>";
+        echo "</div></div></div>";
+      }
+    function login_user_details($id){
+      global $pdo;
+      $sql = "SELECT * FROM tbl_user_register WHERE user_email = :id";
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute(['id'=>$id]);
+      $row = $stmt->fetch();
+      echo "<div class='col-md-12'><p>User Name : $row->user_fullname</p></div>";
+      echo "<div class='col-md-12'><p>User Phone : $row->user_phone</p></div>";
+      echo "<div class='col-md-12'><p>User Email : $row->user_email</p></div>";
+    }
 
 
  ?>

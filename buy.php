@@ -27,7 +27,8 @@
   <?php
   if (isset($_GET['source'])) {
     $pnam =  $_GET['source'];
-  } ?>
+  }
+  ?>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -37,10 +38,17 @@
     <div class="row">
       <div class="col-md-12">
           <div class=" text-center my-3">
-<?php
+            <?php
             if (isset($_GET['product_id'])) {
+
               astrology_view($_GET['product_id']);
+
+            }elseif (isset($_GET['view_yantra_id'])) {
+
+              yantra_view($_GET['view_yantra_id']);
+
             }
+
               ?>
         </div>
       </div>

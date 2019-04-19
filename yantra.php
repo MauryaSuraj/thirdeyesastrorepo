@@ -16,11 +16,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-136820932-1');
 </script>
-
-
 </head>
 <body>
   <header>
@@ -31,6 +28,7 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="h1 my-2"> Yantra </h1>
+        <hr>
       </div>
     </div>
     <div class="row">

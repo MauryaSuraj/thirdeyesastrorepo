@@ -3,7 +3,12 @@
   <?php
   $message='';
   if (isset($_POST['add_asrto'])) {
-    if (add_blog($_POST['blog_title'], $_POST['blog_keyword'], $_POST['blog_meta_desc'], $_POST['blog_meta_title'], $_POST['blog_body'], $_POST['blog_thumb'], $_POST['blog_cat_id'], $_POST['blog_tag'])) {
+
+    $upload_1 = $_FILES['blog_thumb']['name'];
+    $upload_temp_1 = $_FILES['blog_thumb']['tmp_name'];
+    move_uploaded_file($upload_temp_1, "img/$upload_1");
+
+    if (add_blog($_POST['blog_title'], $_POST['blog_keyword'], $_POST['blog_meta_desc'], $_POST['blog_meta_title'], $_POST['blog_body'], $upload_1, $_POST['blog_cat_id'], $_POST['blog_tag'])) {
       $message = "<div class='alert alert-success'>  BLOG " .$_POST['blog_title'] . "  added </div>";
     }else {
       $message = "<div class='alert alert-danger'>  BLOG Is Not Added </div>";

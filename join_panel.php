@@ -31,8 +31,6 @@
         <div class="row">
           <div class="col-md-12">
             <p class="text-center">
-
-
 We Provide Various service related To vastu shastra, Janam Kundali, Hastrekha Faladesh by fingerprint, yagadi at very reasonable price, for any query or booking contact us at that mobile number.
 Contact on +91-1234567889
 </p>

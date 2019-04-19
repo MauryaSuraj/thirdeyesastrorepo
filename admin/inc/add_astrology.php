@@ -3,7 +3,18 @@
   <?php
   $message='';
   if (isset($_POST['add_asrto'])) {
-    if (add_asto_service($_POST['yantra_name'], $_POST['yantra_details'], $_POST['yantra_price'], $_POST['yantra_meta_keywords'], $_POST['yantra_meta_description'], $_POST['yantra_img_1'], $_POST['yantra_img_2'], $_POST['yantra_img_3'])) {
+    $upload_1 = $_FILES['yantra_img_1']['name'];
+    $upload_temp_1 = $_FILES['yantra_img_1']['tmp_name'];
+    move_uploaded_file($upload_temp_1, "img/$upload_1");
+
+    $upload_2 = $_FILES['yantra_img_2']['name'];
+    $upload_temp_2 = $_FILES['yantra_img_2']['tmp_name'];
+    move_uploaded_file($upload_temp_2, "img/$upload_2");
+
+    $upload_3 = $_FILES['yantra_img_3']['name'];
+    $upload_temp_3 = $_FILES['yantra_img_3']['tmp_name'];
+    move_uploaded_file($upload_temp_3, "img/$upload_3");
+    if (add_asto_service($_POST['yantra_name'], $_POST['yantra_details'], $_POST['yantra_price'], $_POST['yantra_meta_keywords'], $_POST['yantra_meta_description'], $upload_1, $upload_2, $upload_3)) {
       $message = "<div class='alert alert-success'>  Service " .$_POST['yantra_name'] . "  added </div>";
     }else {
       $message = "<div class='alert alert-danger'>  Service Is Not Added </div>";
