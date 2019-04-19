@@ -30,7 +30,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="h1 my-3"> Yantra </h1>
+        <h1 class="h1 my-2"> Yantra </h1>
       </div>
     </div>
     <div class="row">

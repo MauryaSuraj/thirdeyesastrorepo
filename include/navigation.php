@@ -2,22 +2,35 @@
 <div class="bg-custom">
   <div class="container">
     <div class="row pt-2 text-white text-center">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <a class="navbar-brand" href="index.php"> <img src="img/logo.png" alt="" height="50px"><span class="text-white ml-2"> Third Eyes Astro </span></a>
         </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <p>
         <img src="img/call.png" alt="" height="45px">  <strong>Ask To Astrologer :- +91 - 8510849225</strong>
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <p>
         <img src="img/mail.png" alt="" height="45px">  <strong>mail us  : - info@thirdeyesastro.com</strong>
         </p>
       </div>
+      <div class="col-md-3 m-auto p-auto">
+        <span><i class="far fa-user fa-2x "></i>
+          <?php
+          if(!user_login_info())
+          {
+            echo "<a href='login.php'> Login Here</a>";
+          }else {
+            echo "<a href='logout.php'> Logout </a>";
+          }
+          ?>
+        </span>
+      </div>
     </div>
   </div>
 </div>
+
 <nav class="navbar navbar-expand-lg navbar-dark special-color-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -96,7 +109,7 @@
                  <span class="text-uppercase text-white">Category 3</span>
                   <ul class="nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="astrology_service.php">Astrology Service</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link item</a>
@@ -146,7 +159,7 @@
                   <span class="text-uppercase text-white">Category 1</span>
                   <ul class="nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="puja.php">Puja and ANUSTHAN</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link item</a>
@@ -195,7 +208,7 @@
                   <span class="text-uppercase text-white">Category 1</span>
                   <ul class="nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="katha.php">Katha</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link item</a>
@@ -248,7 +261,7 @@
                   <span class="text-uppercase text-white">Category 1</span>
                   <ul class="nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link active" href="kundali.php"> Kundali </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Link item</a>

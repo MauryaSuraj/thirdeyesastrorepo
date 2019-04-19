@@ -32,9 +32,10 @@
 }
   }
    ?>
+<main>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 m-auto p-auto">
+      <div class="col-md-6 m-auto p-auto z-depth-2">
         <div class="p-5 ">
           <form method="post" action="" enctype="multipart/form-data">
             <fieldset class="form-group">
@@ -56,8 +57,10 @@
             <button type="submit" class="btn btn-primary" name="Register">Register</button>
             <?php echo $message;  ?>
           </form>
+          <a href="login.php"><strong>Login Here, If you are already Registered!</strong></a>
         </div>
       </div>
     </div>
   </div>
+</main>
 <?php include 'include/footer.php'; ?>

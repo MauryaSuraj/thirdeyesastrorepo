@@ -21,16 +21,20 @@
   if (isset($_POST['login'])) {
     if (user_login($_POST['email'], $_POST['password']) > 0) {
       $message = "<div class='alert alert-success' role='alert'> User Login </div>";
-      header('Location: admin/index.php');
+
+          if (!check_user_type($_SESSION['user_id'])) {
+            header('Location: admin/index.php');
+          }
     }else {
        $message = "<div class='alert alert-danger' role='alert'> User Not Registerd, Please Register Yourself!! </div>";
     }
   }
    ?>
+<main>
   <div class="container">
     <div class="row">
       <div class="col-md-6 m-auto p-auto">
-        <div class="p-5">
+        <div class="p-5 z-depth-2">
           <form method="post" action="" enctype="multipart/form-data">
             <fieldset class="form-group">
               <label for="exampleInputEmail1">Email address</label>
@@ -43,8 +47,10 @@
             <button type="submit" class="btn btn-primary" name="login"> Login </button>
             <?php echo $message;  ?>
           </form>
+          <a href="register.php"><strong>Register Here ?</strong></a>
         </div>
       </div>
     </div>
   </div>
+</main>
 <?php include 'include/footer.php'; ?>

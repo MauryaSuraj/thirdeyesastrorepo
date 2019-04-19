@@ -42,7 +42,10 @@
           </div>
        </div>
        <div class="col-md-6">
-         <img src="img/ganesh.jpg" alt="">
+         <div class="chakra">
+
+         </div>
+         <img src="img/ganesh.png" alt=""  class="img-fluid">
        </div>
      </div>
    </div>
