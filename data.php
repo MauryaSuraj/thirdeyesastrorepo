@@ -47,11 +47,28 @@
               <div class="col-md text-dark m-2">
                 <div class="row p-1">
                   <?php
+                  $message ='';
+                      if (isset($_SESSION['user_id'])) {
+                      echo  $email = $_SESSION['user_id'];
+                      }
                   if (isset($_GET['product_type'])) {
-                    echo $_GET['product_type'];
+                    // echo $_GET['product_type'];
                   }
                   if (isset($_GET['product_id'])) {
                     yantra_view_data($_GET['product_id']);
+                  }
+                  if (isset($_POST['complete_purchase'])) {
+
+                    $upload_2 = $_FILES['address_proof']['name'];
+                    $upload_temp_2 = $_FILES['address_proof']['tmp_name'];
+                    move_uploaded_file($upload_temp_2, "img/$upload_2");
+
+                    if (buyer_with_product($email, $_POST['father_name'], $_POST['caste_name'], $_POST['kuldevta_name'], $_POST['address'], $upload_2)) {
+
+                    }else {
+                        $message = "<div class='alert alert-success'> You have entered Details </div>";
+                    }
+
                   }
                     ?>
                 </div>
@@ -61,34 +78,29 @@
       <div class="col-md">
         <div class="row">
           <div class="col-md-8 m-auto p-auto">
-            <form class="z-depth-3 p-2 mt-2 border border-success border-rounded">
+            <?php echo $message; ?>
+            <form class="z-depth-3 p-2 mt-2 border border-success border-rounded" method="post" enctype="application/x-www-form-urlencoded">
               <fieldset class="form-group">
-                <label for="exampleInputEmail1"> <strong>Enter Some details</strong> </label>
-                <input type="text" class="form-control" id="" placeholder="Enter Details here">
+                <label for="exampleInputEmail1"> <strong>Enter Father Name</strong> </label>
+                <input type="text" class="form-control" name="father_name" placeholder="Enter Father Name">
               </fieldset>
               <fieldset class="form-group">
-                <label for="exampleInputPassword1"> <strong>Enter Details here</strong> </label>
-                <input type="text" class="form-control" id="" placeholder="Enter Some details here">
+                <label for="exampleInputPassword1"> <strong>Caste Name </strong> </label>
+                <input type="text" class="form-control" name="caste_name" placeholder="Enter Caste Name">
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="exampleInputPassword1"> <strong>Kuldevta Name</strong> </label>
+                <input type="text" class="form-control" name="kuldevta_name" placeholder="Enter Kuldevta ">
               </fieldset>
               <fieldset class="form-group">
                 <label for="exampleTextarea"> <strong>Address</strong> </label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                <textarea class="form-control" id="exampleTextarea" name="address" rows="3"></textarea>
               </fieldset>
               <fieldset class="form-group">
                 <label for="exampleTextarea"> <strong>Address Proof</strong> </label>
-                <input type="file" name="" value="" class="form-control">
+                <input type="file"  class="form-control" name="address_proof">
               </fieldset>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Are You agree With terms and conditions
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Cash On Delivery
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary"> Complete Purchase </button>
+              <button type="submit" class="btn btn-primary" name="complete_purchase"> Complete Purchase </button>
             </form>
           </div>
         </div>

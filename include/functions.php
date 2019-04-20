@@ -263,6 +263,29 @@ function astrology_view($id){
       echo "<div class='col-md-12'><p>User Phone : $row->user_phone</p></div>";
       echo "<div class='col-md-12'><p>User Email : $row->user_email</p></div>";
     }
+    function buyer_with_product($email, $father_name, $caste_name, $kuldevta_name, $address, $address_proof){
+      global $pdo;
+      $sql = "SELECT * FROM tbl_user_register WHERE user_email = :id";
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute(['id'=>$email]);
+
+      $row = $stmt->fetch();
+
+    echo  $row->user_fullname;
+    echo  $row->user_phone;
+    echo  $row->user_email;
+      try {
+        $sql = 'INSERT INTO tbl_buyer_with_product(buyer_name, buyer_father_name, buyer_caste, buyer_kuldevta_name, buyer_yantra_name, product_id, product_name, buyer_address, buyer_proof, buyer_phone_no) VALUES  (:name, :father_name, :caste, :kuldevta, :yantra, :product_id, :product_name, :address,:proof, :phone_no)';
+        $stmt = $pdo->prepare($sql);
+        if ($stmt->execute(['name'=>$name, 'father_name'=>$father_name, 'caste'=>$caste_name, 'kuldevta'=>$kuldevta_name, 'yantra'=>$img1, 'product_id'=>$img2, 'product_name'=>$img3, 'address'=>$address, 'proof'=>$address_proof, 'phone_no'=>$ghtt])) {
+          // true false for message
+        }
+      } catch (PDOException $e) {
+        echo "Database Error : The user could not be added .<br>".$e.getMessage();
+      } catch (Exception $e){
+        echo " General Error : The user could not be added .<br>".$e.getMessage();
+      }
+    }
 
 
  ?>

@@ -135,7 +135,7 @@
   function add_puja($name, $details, $price, $meta_keyword, $meta_des, $img1, $img2, $img3){
     global $pdo;
     $yantra_added = FALSE;
-    try {      
+    try {
       $sql = 'INSERT INTO tbl_puja(puja_name, puja_details, puja_price, puja_meta_keyword, puja_meta_des, puja_img_1, puja_img_2, puja_img_3) VALUES  (:name, :details, :price, :meta_keyword, :meta_des, :img1, :img2, :img3)';
       $stmt = $pdo->prepare($sql);
       if ($stmt->execute(['name'=>$name, 'details'=>$details, 'price'=>$price, 'meta_keyword'=>$meta_keyword, 'meta_des'=>$meta_des, 'img1'=>$img1, 'img2'=>$img2, 'img3'=>$img3])) {
