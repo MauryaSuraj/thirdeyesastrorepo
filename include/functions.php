@@ -314,10 +314,9 @@ function astrology_view($id){
       $row = $stmt->fetch();
 
       echo "<div class='row'>";
-      echo "<div class='col-md'> <p> $row->buyer_with_product_id  </p> </div>";
-      echo "<div class='col-md'> <p> $row->product_delivery_status </p> </div>";
-      echo "<div class='col-md'> <p> $row->product_payment_status </p> </div>";
-      echo "<div class='col-md'> <p> $row->product_dispatchdate </p> </div>";
+      echo "<div class='col-md-12'> <p>Delivery status :   $row->product_delivery_status </p> </div>";
+      echo "<div class='col-md-12'> <p>Payment Satus :  $row->product_payment_status </p> </div>";
+      echo "<div class='col-md-12'> <p>Product Dispatch Date :  $row->product_dispatchdate </p> </div>";
       echo "</div>";
       product_details($row->buyer_with_product_id);
     }
@@ -327,15 +326,16 @@ function astrology_view($id){
       $stmt = $pdo->prepare($sql);
       $stmt->execute(['id'=>$id]);
       $row = $stmt->fetch();
-
-      echo "<div class='col-md'> $row->buyer_name </div>";
-      echo "<div class='col-md'> $row->buyer_father_name </div>";
-      echo "<div class='col-md'> $row->buyer_caste </div>";
-      echo "<div class='col-md'> $row->buyer_kuldevta_name </div>";
-      echo "<div class='col-md'> $row->product_name </div>";
-      echo "<div class='col-md'> $row->product_id </div>";
-      echo "<div class='col-md'> $row->buyer_address </div>";
-      echo "<div class='col-md'> $row->buyer_phone_no </div>";
+      echo "<div class='bg-success'>";
+      echo "<div class='col-md'><p>Customer Name :   $row->buyer_name </p></div>";
+      echo "<div class='col-md'><p>Father Name :  $row->buyer_father_name </p></div>";
+      echo "<div class='col-md'><p>Customer Caste :  $row->buyer_caste</p> </div>";
+      echo "<div class='col-md'><p>customer Kuldevta :  $row->buyer_kuldevta_name </p></div>";
+      echo "<div class='col-md'><p>Product Name :  $row->product_name </p></div>";
+      echo "<div class='col-md'><p>Product Id :  $row->product_id </p></div>";
+      echo "<div class='col-md'><p>Address :  $row->buyer_address</p> </div>";
+      echo "<div class='col-md'><p>Phone No. : $row->buyer_phone_no </p></div>";
+      echo "</div>";
     }
 
 

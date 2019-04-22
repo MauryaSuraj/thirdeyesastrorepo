@@ -29,24 +29,22 @@
     <div class="row">
       <div class="col-md-12">
         <h1 class="h1 my-2"> Tracking Details </h1>
+        <hr>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
           <div class=" text-center my-3">
-            <?php  if (isset($_GET['tracking_id'])) {
+            <?php
+              if (isset($_GET['tracking_id'])) {
               $id = $_GET['tracking_id'];
-            }  ?>
+            }
 
+             ?>
         </div>
+         <?php tracking_details($id); ?>
       </div>
-      <div class="col-md-6">
-        <h3> Product Details  </h3>
-        <?php tracking_details($id); ?>
-      </div>
-      <div class="col-md-6">
-        <h3> Tracking Details  </h3>
-      </div>
+
     </div>
   </div>
 </main>
