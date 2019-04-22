@@ -27,13 +27,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="h1 my-2"> DEMO </h1>
+        <h1 class="h1 my-2"> Purchase Details </h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md  text-white p-2">
+      <div class="col-md p-1">
             <div class="row">
-              <div class="col-md bg-primary m-2">
+              <div class="col-md m-2">
                 <div class="row p-1">
                   <?php
                   if (isset($_SESSION['user_id'])) {
@@ -44,12 +44,12 @@
                   ?>
                 </div>
               </div>
-              <div class="col-md text-dark m-2">
+              <div class="col-md text-dark">
                 <div class="row p-1">
                   <?php
                   $message ='';
                       if (isset($_SESSION['user_id'])) {
-                      echo  $email = $_SESSION['user_id'];
+                        $email = $_SESSION['user_id'];
                       }
                   if (isset($_GET['product_type'])) {
                     // echo $_GET['product_type'];
@@ -58,17 +58,14 @@
                     yantra_view_data($_GET['product_id']);
                   }
                   if (isset($_POST['complete_purchase'])) {
-
                     $upload_2 = $_FILES['address_proof']['name'];
                     $upload_temp_2 = $_FILES['address_proof']['tmp_name'];
                     move_uploaded_file($upload_temp_2, "img/$upload_2");
-
-                    if (buyer_with_product($email, $_POST['father_name'], $_POST['caste_name'], $_POST['kuldevta_name'], $_POST['address'], $upload_2)) {
-
+                    if (buyer_with_product($email, $_POST['father_name'], $_POST['caste_name'], $_POST['kuldevta_name'], $_POST['address'], $upload_2, $_GET['product_type'], $_GET['product_id'])) {
+                          $message = "<div class='alert alert-success'> You have entered Details </div>";
                     }else {
-                        $message = "<div class='alert alert-success'> You have entered Details </div>";
+                          $message = "<div class='alert alert-warning'> Data Not Entered </div>";
                     }
-
                   }
                     ?>
                 </div>
@@ -78,8 +75,8 @@
       <div class="col-md">
         <div class="row">
           <div class="col-md-8 m-auto p-auto">
-            <?php echo $message; ?>
-            <form class="z-depth-3 p-2 mt-2 border border-success border-rounded" method="post" enctype="application/x-www-form-urlencoded">
+            <?php echo $message;  ?>
+            <form class="z-depth-3 p-2 mt-2 border border-success border-rounded" method="post" enctype="multipart/form-data">
               <fieldset class="form-group">
                 <label for="exampleInputEmail1"> <strong>Enter Father Name</strong> </label>
                 <input type="text" class="form-control" name="father_name" placeholder="Enter Father Name">

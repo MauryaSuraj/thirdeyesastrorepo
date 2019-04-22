@@ -1,6 +1,7 @@
 <?php ob_start(); ?>
 <?php session_start(); ?>
 <?php
+date_default_timezone_set('Asia/Kolkata');
 include('db.php');
 
 function is_mail_id_registered($email){
@@ -263,28 +264,78 @@ function astrology_view($id){
       echo "<div class='col-md-12'><p>User Phone : $row->user_phone</p></div>";
       echo "<div class='col-md-12'><p>User Email : $row->user_email</p></div>";
     }
-    function buyer_with_product($email, $father_name, $caste_name, $kuldevta_name, $address, $address_proof){
+    function buyer_with_product($email, $father_name, $caste_name, $kuldevta_name, $address, $address_proof, $product_type, $product_id){
       global $pdo;
+      $data_entred = FALSE;
+      $yantra = $product_type.$product_id;
       $sql = "SELECT * FROM tbl_user_register WHERE user_email = :id";
       $stmt = $pdo->prepare($sql);
       $stmt->execute(['id'=>$email]);
-
       $row = $stmt->fetch();
-
-    echo  $row->user_fullname;
-    echo  $row->user_phone;
-    echo  $row->user_email;
       try {
         $sql = 'INSERT INTO tbl_buyer_with_product(buyer_name, buyer_father_name, buyer_caste, buyer_kuldevta_name, buyer_yantra_name, product_id, product_name, buyer_address, buyer_proof, buyer_phone_no) VALUES  (:name, :father_name, :caste, :kuldevta, :yantra, :product_id, :product_name, :address,:proof, :phone_no)';
         $stmt = $pdo->prepare($sql);
-        if ($stmt->execute(['name'=>$name, 'father_name'=>$father_name, 'caste'=>$caste_name, 'kuldevta'=>$kuldevta_name, 'yantra'=>$img1, 'product_id'=>$img2, 'product_name'=>$img3, 'address'=>$address, 'proof'=>$address_proof, 'phone_no'=>$ghtt])) {
-          // true false for message
+        if ($stmt->execute(['name'=>$row->user_fullname, 'father_name'=>$father_name, 'caste'=>$caste_name, 'kuldevta'=>$kuldevta_name, 'yantra'=>$yantra, 'product_id'=>$product_id, 'product_name'=>$product_type, 'address'=>$address, 'proof'=>$address_proof, 'phone_no'=>$row->user_phone])) {
+          $data_entred = TRUE;
         }
       } catch (PDOException $e) {
         echo "Database Error : The user could not be added .<br>".$e.getMessage();
       } catch (Exception $e){
         echo " General Error : The user could not be added .<br>".$e.getMessage();
       }
+      tracker_function($pdo->lastInsertId());
+      return $data_entred;
+    }
+    function tracker_function($buyer_with_product){
+      global $pdo;
+      $tacker_on = FALSE;
+      $product_delivery_status = 'READY TO DISPATCH';
+      $product_payment_status = 'PENDING';
+      $product_dispatchdate = date('d-m-Y H:i:s');
+      try {
+        $sql = 'INSERT INTO tbl_tracker(buyer_with_product_id, product_delivery_status, product_payment_status, product_dispatchdate) VALUES (:id, :del_status, :pay_status, :dis_date)';
+        $stmt = $pdo->prepare($sql);
+        if ($stmt->execute(['id'=>$buyer_with_product, 'del_status'=>$product_delivery_status, 'pay_status'=>$product_payment_status, 'dis_date'=>$product_dispatchdate])) {
+          header('Location: tracking.php?tracking_id='.$pdo->lastInsertId());
+        }else {
+          echo "Some error".$product_delivery_status ." " .$product_payment_status." ".$product_dispatchdate." ".$buyer_with_product;
+        }
+      } catch (PDOException $e) {
+        echo "Database Error : The user could not be added .<br>".$e.getMessage();
+      }catch( Exception $e ){
+        echo " General Error : The Data can't be added ".$e.getMessage();
+      }
+    }
+    function tracking_details($id){
+      global $pdo;
+      $sql = 'SELECT * FROM tbl_tracker WHERE tracker_id = :id';
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute(['id'=>$id]);
+      $row = $stmt->fetch();
+
+      echo "<div class='row'>";
+      echo "<div class='col-md'> <p> $row->buyer_with_product_id  </p> </div>";
+      echo "<div class='col-md'> <p> $row->product_delivery_status </p> </div>";
+      echo "<div class='col-md'> <p> $row->product_payment_status </p> </div>";
+      echo "<div class='col-md'> <p> $row->product_dispatchdate </p> </div>";
+      echo "</div>";
+      product_details($row->buyer_with_product_id);
+    }
+    function product_details($id){
+      global $pdo;
+      $sql = 'SELECT * FROM tbl_buyer_with_product WHERE buyer_product_id = :id';
+      $stmt = $pdo->prepare($sql);
+      $stmt->execute(['id'=>$id]);
+      $row = $stmt->fetch();
+
+      echo "<div class='col-md'> $row->buyer_name </div>";
+      echo "<div class='col-md'> $row->buyer_father_name </div>";
+      echo "<div class='col-md'> $row->buyer_caste </div>";
+      echo "<div class='col-md'> $row->buyer_kuldevta_name </div>";
+      echo "<div class='col-md'> $row->product_name </div>";
+      echo "<div class='col-md'> $row->product_id </div>";
+      echo "<div class='col-md'> $row->buyer_address </div>";
+      echo "<div class='col-md'> $row->buyer_phone_no </div>";
     }
 
 
