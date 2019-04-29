@@ -37,60 +37,26 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 m-auto p-auto">
-      <ul class="navbar-nav mr-auto">
+  <div class="row m-auto p-auto">
+    <div class="col-md-12 ">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="index.php">HOME</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            YANTRA
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <span class="text-uppercase text-white">Category 2</span>
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="yantra.php">yantra</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <a href="">
-                    <img src="img/sri-yantra.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <!-- /.col-md-4  -->
-              </div>
-            </div>
-            <!--  /.container  -->
-
-
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="yantra.php">YANTRA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="astrology_service.php">ASTROLOGY SERVICE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="puja.php">PUJA AND ANUSHTHAN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="katha.php">KATHA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kundali.php">KUNDALI</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.php">CONTACT US</a>
@@ -98,204 +64,11 @@
         <li class="nav-item">
           <a class="nav-link" href="blog.php">BLOG</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ASTROLOGY SERVICES
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                 <span class="text-uppercase text-white">Category 3</span>
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="astrology_service.php">Astrology Service</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <a href="">
-                    <img src="img/leo.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <!-- /.col-md-4  -->
-              </div>
-            </div>
-            <!--  /.container  -->
-          </div>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="gemstone.php">GEMSTONES</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PUJA AND ANUSTHAN
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <span class="text-uppercase text-white">Category 1</span>
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="puja.php">Puja and ANUSTHAN</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <a href="">
-                    <img src="img/temple.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <!-- /.col-md-4  -->
-              </div>
-            </div>
-            <!--  /.container  -->
-
-
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            KATHA DETAILS
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <span class="text-uppercase text-white">Category 1</span>
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="katha.php">Katha</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <a href="">
-                    <img src="img/pandit.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <!-- /.col-md-4  -->
-              </div>
-            </div>
-            <!--  /.container  -->
-
-
-          </div>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="horoscope.php"> FREE HOROSCOPE</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            KUNDALI SERVICES
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <span class="text-uppercase text-white">Category 1</span>
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="kundali.php"> Kundali </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link item</a>
-                  </li>
-                </ul>
-                </div>
-                <!-- /.col-md-4  -->
-                <div class="col-md-4">
-                  <a href="">
-                    <img src="img/ganesha.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <!-- /.col-md-4  -->
-              </div>
-            </div>
-            <!--  /.container  -->
-          </div>
         </li>
       </ul>
     </div>

@@ -17,13 +17,20 @@
 <body>
   <header><?php include 'include/navigation.php'; ?></header>
   <?php
+
   $message ='';
   if (isset($_POST['login'])) {
     if (user_login($_POST['email'], $_POST['password']) > 0) {
       $message = "<div class='alert alert-success' role='alert'> User Login </div>";
 
           if (!check_user_type($_SESSION['user_id'])) {
-            header('Location: admin/index.php');
+            if (isset($_REQUEST['redirurl'])) {
+              $url = $_REQUEST['redirurl'];
+            }else {
+              $url = "index.php";
+            }
+            header('Location: $url');
+            // header('Location: admin/index.php');
           }
     }else {
        $message = "<div class='alert alert-danger' role='alert'> User Not Registerd, Please Register Yourself!! </div>";
@@ -37,6 +44,7 @@
         <div class="p-5 z-depth-2">
           <form method="post" action="" enctype="multipart/form-data">
             <fieldset class="form-group">
+              <input type="hidden" name="redirurl" value="<? echo $_SERVER['HTTP_REFERER']; ?>">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="useremail" name="email" required placeholder="Enter email">
             </fieldset>

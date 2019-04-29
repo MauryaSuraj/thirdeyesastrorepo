@@ -67,8 +67,8 @@ function yantra_list(){
     echo "<h3>$row->yantra_name</h3>";
     echo "<p>" . substr($row->yantra_text, 0 , strpos($row->yantra_text, ' ', 50)) ."</p> <br>";
     echo "<strong> Rs. $row->yatra_price</strong><br>";
-    echo "<a href='buy.php?source=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>BUY NOW </a>";
-    echo "<a href='view.php?source=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>VIEW </a>";
+    echo "<a href='buy.php?source=yantra&view_page=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>BUY NOW </a>";
+    echo "<a href='view.php?source=yantra&view_page=yantra&view_yantra_id=$row->yantra_id' class='btn btn-outline-success'>VIEW </a>";
     echo "</div>";
   }
 }
@@ -449,6 +449,48 @@ function astrology_view($id){
         echo "<strong> Rs. $row->ast_price</strong><br>";
         echo "</div></div>";
       }
+      function puja_view_data($id){
+        global $pdo;
+        $sql = "SELECT * FROM tbl_puja WHERE puja_id = :id";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['id'=>$id]);
+        $row = $stmt->fetch();
+          echo "<div class='row'>";
+          echo "<div class='col-md-6'>";
+          echo "<img src='img/hanuman.jpg' alt='hindu god hanuman' class='img-fluid' >";
+          echo "</div><div class='col-md'>";
+          echo "<h3 class='h2'>$row->puja_name</h3>";
+          echo "<strong> Rs. $row->puja_price</strong><br>";
+          echo "</div></div>";
+        }
+        function katha_view_data($id){
+          global $pdo;
+          $sql = "SELECT * FROM tbl_katha WHERE katha_id = :id";
+          $stmt = $pdo->prepare($sql);
+          $stmt->execute(['id'=>$id]);
+          $row = $stmt->fetch();
+            echo "<div class='row'>";
+            echo "<div class='col-md-6'>";
+            echo "<img src='img/hanuman.jpg' alt='hindu god hanuman' class='img-fluid' >";
+            echo "</div><div class='col-md'>";
+            echo "<h3 class='h2'>$row->katha_name</h3>";
+            echo "<strong> Rs. $row->katha_price</strong><br>";
+            echo "</div></div>";
+          }
+          function kundali_view_data($id){
+            global $pdo;
+            $sql = "SELECT * FROM tbl_kundali WHERE kundali_id = :id";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute(['id'=>$id]);
+            $row = $stmt->fetch();
+              echo "<div class='row'>";
+              echo "<div class='col-md-6'>";
+              echo "<img src='img/hanuman.jpg' alt='hindu god hanuman' class='img-fluid' >";
+              echo "</div><div class='col-md'>";
+              echo "<h3 class='h2'>$row->kundali_name</h3>";
+              echo "<strong> Rs. $row->kundali_price</strong><br>";
+              echo "</div></div>";
+            }
       function booking_with_product($email, $samagri_id, $booking_date, $booking_time, $address, $address_proof, $img_proof ,$product_type, $product_id){
         global $pdo;
         $data_entred = FALSE;

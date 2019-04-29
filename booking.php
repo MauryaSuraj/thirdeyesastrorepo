@@ -56,7 +56,14 @@
             yantra_view_data($_GET['product_id']);
           }elseif ($product_type == 'astrology' && isset($_GET['product_id'])) {
               astology_view_data($_GET['product_id']);
+          }elseif ($product_type=='puja' && isset($_GET['product_id'])) {
+            puja_view_data($_GET['product_id']);
+          }elseif ($product_type == 'katha' && isset($_GET['product_id']) ) {
+            katha_view_data($_GET['product_id']);
+          }elseif ($product_type == 'kundali' && isset($_GET['product_id'])) {
+            kundali_view_data($_GET['product_id']);
           }
+
           if (isset($_POST['complete_purchase'])) {
 
             $upload_2 = $_FILES['address_proof']['name'];
