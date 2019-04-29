@@ -52,11 +52,14 @@
                         $email = $_SESSION['user_id'];
                       }
                   if (isset($_GET['product_type'])) {
-                    // echo $_GET['product_type'];
+                    $product_type = $_GET['product_type'];
                   }
-                  if (isset($_GET['product_id'])) {
+                  if ($product_type == 'yantra' && isset($_GET['product_id'])) {
                     yantra_view_data($_GET['product_id']);
+                  }elseif ($product_type == 'astrology' && isset($_GET['product_id'])) {
+                      astology_view_data($_GET['product_id']);
                   }
+
                   if (isset($_POST['complete_purchase'])) {
                     $upload_2 = $_FILES['address_proof']['name'];
                     $upload_temp_2 = $_FILES['address_proof']['tmp_name'];

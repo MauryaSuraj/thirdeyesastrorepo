@@ -37,7 +37,7 @@
       <div class="row">
         <div class="col-md-12">
             <div class="row text-center my-3">
-            <?php katha_list(); ?>
+            <?php kundali_list(); ?>
           </div>
         </div>
       </div>
